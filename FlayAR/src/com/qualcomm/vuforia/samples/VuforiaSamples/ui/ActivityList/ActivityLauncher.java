@@ -81,7 +81,7 @@ public class ActivityLauncher extends ListActivity
                 break;
             case 5:
                 intent.putExtra("ACTIVITY_TO_LAUNCH",
-                    "app.TextRecognition.TextReco");
+                    "TextReco");
                 intent.putExtra("ABOUT_TEXT", "TextReco/TR_about.html");
                 break;
             case 6:

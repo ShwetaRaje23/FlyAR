@@ -52,10 +52,11 @@ public class AboutScreen extends Activity implements OnClickListener
         Bundle extras = getIntent().getExtras();
         String webText = extras.getString("ABOUT_TEXT");
         mClassToLaunchPackage = getPackageName();
-        System.out.println(mClassToLaunchPackage);
-       // mClassToLaunchPackage="com.qualcomm.vuforia.samples.VuforiaSamples.app.TextRecognition";
+        System.out.println(extras.getString("ACTIVITY_TO_LAUNCH"));
+       //mClassToLaunchPackage="com.qualcomm.vuforia.samples.VuforiaSamples";
         mClassToLaunch = mClassToLaunchPackage + "."
             + extras.getString("ACTIVITY_TO_LAUNCH");
+        //mClassToLaunch = extras.getString("ACTIVITY_TO_LAUNCH");
         
         mAboutWebText = (WebView) findViewById(R.id.about_html_text);
         
